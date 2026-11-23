@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f5f3ed">
+<meta name="description" content="프리미엄 사케 셀렉트숍 웹앱 구축 제안서">
+<title>구축 제안서 | SAKE SELECT</title>
+<style>
+:root{--bg:#f5f3ed;--ink:#222820;--muted:#6e756b;--gold:#a88a58;--line:#dedbd1;--dark:#202720;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,"Noto Sans KR",sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}.top{height:68px;position:sticky;top:0;z-index:5;background:#f5f3edeF;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(22px,calc((100% - 1120px)/2));font-size:11px;letter-spacing:.14em}.logo{font:20px Georgia,serif;letter-spacing:.2em}.back{color:var(--muted);letter-spacing:.08em}.wrap{max-width:1120px;margin:auto;padding:0 28px}.cover{padding:100px 0 82px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}.cover:after{content:"酒";position:absolute;right:3%;top:10px;font:clamp(190px,30vw,360px) Georgia,serif;color:#eae5d8;z-index:-1}.kicker{font-size:11px;color:var(--gold);letter-spacing:.25em}.cover h1{font:normal clamp(42px,7vw,76px)/1.12 Georgia,"Noto Serif KR",serif;letter-spacing:-.04em;margin:24px 0}.cover h1 em{color:var(--gold);font-weight:400}.cover p{max-width:660px;color:var(--muted);font-size:16px}.meta{display:flex;gap:34px;margin-top:45px;color:var(--muted);font-size:11px;letter-spacing:.08em}.meta strong{display:block;color:var(--ink);font-size:13px;font-weight:500;letter-spacing:0}.section{padding:76px 0;border-bottom:1px solid var(--line)}.section-head{display:grid;grid-template-columns:190px 1fr;gap:34px;margin-bottom:34px}.num{color:var(--gold);font:italic 22px Georgia,serif}.section h2{font:normal clamp(27px,4vw,40px)/1.25 Georgia,"Noto Serif KR",serif;margin:0 0 13px;letter-spacing:-.025em}.section-intro{color:var(--muted);margin:0;max-width:720px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:#ebe8df;padding:25px;min-height:150px}.card .label{font-size:10px;letter-spacing:.16em;color:var(--gold)}.card h3{font-size:16px;font-weight:500;margin:12px 0 7px}.card p{font-size:13px;color:var(--muted);margin:0}.tech{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.tech article{border:1px solid var(--line);padding:24px}.tech h3{font-size:16px;font-weight:500;margin:0 0 8px}.tech p{font-size:13px;color:var(--muted);margin:0}.pill{display:inline-block;padding:5px 9px;border:1px solid #d5c9ae;color:#8b7145;font-size:10px;letter-spacing:.08em;margin-bottom:15px}.table{width:100%;border-collapse:collapse;font-size:13px}.table th,.table td{text-align:left;padding:14px 15px;border-bottom:1px solid var(--line)}.table th{font-weight:500;color:var(--muted);background:#eeece5}.table td:last-child,.table th:last-child{text-align:right;white-space:nowrap}.price-total{display:flex;justify-content:space-between;align-items:center;padding:23px 25px;background:var(--dark);color:#fff;margin-top:15px}.price-total span{font-size:12px;color:#c7c9bf}.price-total strong{font:30px Georgia,serif;color:#d5bd8e}.note{font-size:12px;color:var(--muted);margin-top:13px}.timeline{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.week{background:#ebe8df;padding:17px 13px;min-height:145px}.week b{font:italic 19px Georgia,serif;color:var(--gold)}.week strong{display:block;font-size:12px;margin:9px 0}.week small{font-size:11px;color:var(--muted);line-height:1.6}.feature-list{display:grid;grid-template-columns:repeat(2,1fr);gap:0 35px}.feature{padding:15px 0;border-bottom:1px solid var(--line);display:flex;gap:13px;font-size:13px}.feature:before{content:"—";color:var(--gold)}.callout{background:#eae6db;padding:30px;margin-top:25px}.callout strong{font-weight:500}.closing{background:var(--dark);color:#f4f1e8;padding:65px 7%;margin-top:70px}.closing h2{font:normal clamp(28px,4vw,42px) Georgia,"Noto Serif KR",serif;margin:0 0 16px}.closing p{color:#c4c8bd;max-width:700px;font-size:14px}.footer{padding:28px 0 45px;display:flex;justify-content:space-between;color:#85877d;font-size:10px;letter-spacing:.12em}.muted{color:var(--muted)}@media(max-width:760px){.wrap{padding:0 20px}.cover{padding:70px 0 55px}.meta{gap:20px;flex-wrap:wrap}.section{padding:55px 0}.section-head{grid-template-columns:1fr;gap:8px}.cards,.tech{grid-template-columns:1fr}.timeline{grid-template-columns:repeat(2,1fr)}.feature-list{grid-template-columns:1fr}.table{font-size:11px}.table th,.table td{padding:11px 8px}.price-total{padding:18px}.price-total strong{font-size:25px}.footer{flex-direction:column;gap:8px}.top{padding:0 18px}}
+@media print{.top{position:static}.cover{padding-top:45px}.section{break-inside:avoid}.closing{break-inside:avoid}body{background:white}}
+</style>
+</head>
+<body>
+<header class="top"><a class="logo" href="./index.html">SAKE SELECT</a><a class="back" href="./index.html">← 메인으로</a></header>
+<main class="wrap">
+<section class="cover">
+<div class="kicker">PROJECT PROPOSAL · 2026</div>
+<h1>Premium Sake<br><em>Digital Experience</em></h1>
+<p>프리미엄 사케 셀렉트숍의 고객 경험과 상품 운영을 하나로 연결하는 웹 플랫폼 구축 제안서입니다. 고객은 자신의 취향에 맞는 사케를 발견하고, 운영자는 상품·가격·재고를 직접 관리할 수 있습니다.</p>
+<div class="meta"><div>PROJECT<strong>SAKE SELECT WEB APP</strong></div><div>ESTIMATED PERIOD<strong>6–8 WEEKS</strong></div><div>ESTIMATED BUDGET<strong>₩2,000,000</strong></div></div>
+</section>
+
+<section class="section">
+<div class="section-head"><div class="num">01 / OVERVIEW</div><div><h2>프로젝트 목표</h2><p class="section-intro">사케를 잘 모르는 고객도 몇 가지 질문만으로 취향과 음식, 예산에 맞는 사케를 찾고, 매장 운영자는 개발자 도움 없이 상품 정보를 최신 상태로 유지하는 것이 핵심입니다.</p></div></div>
+<div class="cards">
+<article class="card"><div class="label">CUSTOMER EXPERIENCE</div><h3>쉽게 발견하는 사케</h3><p>검색·필터·상세 정보와 설문형 추천으로 고객의 선택을 돕습니다.</p></article>
+<article class="card"><div class="label">STORE OPERATION</div><h3>직접 관리하는 상품</h3><p>150~200종의 상품, 가격, 재고와 판매 상태를 관리자 화면에서 관리합니다.</p></article>
+<article class="card"><div class="label">FUTURE READY</div><h3>확장 가능한 구조</h3><p>향후 POS, 판매 분석, 회원 및 온라인 주문 기능을 연결할 수 있게 설계합니다.</p></article>
+</div>
+</section>
+
+<section class="section">
+<div class="section-head"><div class="num">02 / TECHNOLOGY</div><div><h2>추천 개발 방식과 기술</h2><p class="section-intro">노코드 플랫폼에 종속되지 않는 범용 웹 기술을 사용합니다. 소스코드와 데이터베이스를 발주자 계정으로 관리해 향후 다른 개발자도 유지보수할 수 있도록 합니다.</p></div></div>
+<div class="tech">
+<article><span class="pill">FRONTEND</span><h3>React + TypeScript</h3><p>고객용 반응형 화면과 관리자 화면을 하나의 프로젝트로 구성합니다. iPad와 모바일에 최적화하고 재사용 가능한 UI 컴포넌트로 개발합니다.</p></article>
+<article><span class="pill">DATABASE</span><h3>Supabase + PostgreSQL</h3><p>상품, 가격, 재고, 판매 상태, 추천 태그를 관계형 DB로 관리합니다. 관리자 인증과 데이터 접근 권한을 구성합니다.</p></article>
+<article><span class="pill">DEPLOYMENT</span><h3>GitHub + Cloudflare Pages</h3><p>소스코드를 GitHub에서 버전 관리하고 웹앱을 배포합니다. Supabase 프로젝트는 발주자 명의 계정으로 운영합니다.</p></article>
+</div>
+</section>
+
+<section class="section">
+<div class="section-head"><div class="num">03 / SCOPE</div><div><h2>1차 개발 범위</h2><p class="section-intro">초기 오픈에 필요한 고객용 기능과 운영자 기능을 우선 구현합니다.</p></div></div>
+<div class="feature-list">
+<div class="feature">상품 DB: 제품명·일본어명·사진·양조장·지역·종류·수입사</div>
+<div class="feature">상세 정보: 사용쌀·정미율·도수·설명·테이스팅 노트</div>
+<div class="feature">가격 관리: 매장용 가격과 소매 가격 분리 관리</div>
+<div class="feature">재고 관리: 수량 변경 및 고객 화면 실시간 반영</div>
+<div class="feature">판매 상태: 판매중·품절·재입고 예정·시즌 종료·비노출</div>
+<div class="feature">검색: 제품명·지역·종류·수입사 검색 및 필터</div>
+<div class="feature">맛 분석: 단맛·드라이·산미·감칠맛·바디·향 시각화</div>
+<div class="feature">추천: 취향·음식·선물용 설문 기반 3~5종 추천</div>
+<div class="feature">QR 연결: 상품별 고유 상세페이지 주소 제공</div>
+<div class="feature">반응형: 매장 iPad와 고객 스마트폰 대응</div>
+</div>
+<div class="callout"><strong>운영 원칙</strong><br><span class="muted">상품은 삭제하지 않고 판매 상태로 노출 여부를 관리합니다. 재고가 0이면 품절로 자동 전환하거나 품절 표시를 적용합니다. 고객 화면에는 매장용·소매용 가격 중 선택된 한 가지 가격만 표시합니다.</span></div>
+</section>
+
+<section class="section">
+<div class="section-head"><div class="num">04 / RECOMMEND</div><div><h2>설문형 사케 추천 시스템</h2><p class="section-intro">초기 버전은 외부 AI API 없이 점수·태그·가중치 방식으로 구현합니다. 운영자가 입력한 맛 성향 데이터와 추천 태그를 활용해 현재 구매 가능한 상품을 추천합니다.</p></div></div>
+<div class="cards">
+<article class="card"><div class="label">01 · TASTE</div><h3>내 취향에 맞는 사케</h3><p>예산, 단맛·드라이·산미, 향과 바디 선호, 사케 경험 수준을 반영합니다.</p></article>
+<article class="card"><div class="label">02 · FOOD PAIRING</div><h3>음식과 어울리는 사케</h3><p>함께 먹을 음식과 선호 스타일을 기준으로 조화 점수를 계산합니다.</p></article>
+<article class="card"><div class="label">03 · GIFT</div><h3>선물용 사케</h3><p>예산과 선물 상황, 추천 태그를 조합해 적합한 상품을 제안합니다.</p></article>
+</div>
+<p class="note">추천 대상은 판매 가능한 상품으로 제한하며, 점수 상위 3~5종과 추천 이유를 함께 보여줍니다. 질문과 가중치는 추후 관리자 설정으로 확장할 수 있도록 구조화합니다.</p>
+</section>
+
+<section class="section">
+<div class="section-head"><div class="num">05 / SCHEDULE</div><div><h2>예상 개발 일정</h2><p class="section-intro">전체 약 6~8주를 기준으로 진행하며, 상품 데이터 준비와 검수 일정에 따라 세부 일정은 조정합니다.</p></div></div>
+<div class="timeline">
+<div class="week"><b>WEEK 01</b><strong>기획·설계</strong><small>화면 구조, UI 방향, DB 설계, 프로젝트 세팅</small></div>
+<div class="week"><b>WEEK 02</b><strong>관리자 기반</strong><small>상품 DB, 관리자 인증, 상품 등록·수정</small></div>
+<div class="week"><b>WEEK 03</b><strong>고객 화면</strong><small>목록, 검색·필터, 상품 상세</small></div>
+<div class="week"><b>WEEK 04</b><strong>운영 기능</strong><small>재고·판매 상태, 가격 표시 모드</small></div>
+<div class="week"><b>WEEK 05</b><strong>추천 기능</strong><small>설문, 태그·가중치 추천 로직</small></div>
+<div class="week"><b>WEEK 06–08</b><strong>검수·오픈</strong><small>반응형 테스트, 데이터 적용, 배포·교육</small></div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-head"><div class="num">06 / INVESTMENT</div><div><h2>예상 개발 견적</h2><p class="section-intro">요청 예산인 약 200만 원을 기준으로 초기 오픈에 필요한 핵심 기능을 우선 구성한 제안 금액입니다.</p></div></div>
+<table class="table"><thead><tr><th>작업 항목</th><th>금액</th></tr></thead><tbody>
+<tr><td>기획 및 UI/UX 디자인</td><td>250,000원</td></tr>
+<tr><td>DB 및 프로젝트 기본 구조</td><td>250,000원</td></tr>
+<tr><td>상품·재고 관리자</td><td>450,000원</td></tr>
+<tr><td>고객용 검색·상세 화면</td><td>350,000원</td></tr>
+<tr><td>설문형 추천 시스템</td><td>350,000원</td></tr>
+<tr><td>가격 모드 및 판매 상태</td><td>150,000원</td></tr>
+<tr><td>테스트·배포·인수인계</td><td>200,000원</td></tr>
+</tbody></table>
+<div class="price-total"><span>ESTIMATED PROJECT COST<br>초기 구축 목표 견적 · 세부 범위 협의 가능</span><strong>₩2,000,000</strong></div>
+<p class="note">서버·도메인 등 외부 서비스의 유료 요금이 발생하는 경우 별도 실비 여부와 명의는 계약 전 협의합니다.</p>
+</section>
+
+<section class="section">
+<div class="section-head"><div class="num">07 / ROADMAP</div><div><h2>예산 절감과 향후 확장</h2><p class="section-intro">1차 오픈 범위를 명확히 하고, 매장 운영 데이터가 쌓이는 시점에 후속 기능을 단계적으로 추가합니다.</p></div></div>
+<div class="cards">
+<article class="card"><div class="label">PHASE 1 · INITIAL</div><h3>이번 구축 범위</h3><p>상품·재고 관리자, 고객 검색·상세, 가격 모드, 설문형 추천, QR용 상세 주소</p></article>
+<article class="card"><div class="label">PHASE 2 · INSIGHT</div><h3>운영 분석</h3><p>추천 로그, 인기 상품 분석, 고객 취향 통계, 판매 데이터 연결</p></article>
+<article class="card"><div class="label">PHASE 3 · CONNECT</div><h3>서비스 확장</h3><p>POS 연동, 회원 기능, 온라인 주문·결제, 고객별 추천 고도화</p></article>
+</div>
+</section>
+
+<section class="section">
+<div class="section-head"><div class="num">08 / HANDOVER</div><div><h2>유지보수와 소유권</h2><p class="section-intro">프로젝트 종료 후에도 발주자가 시스템을 소유하고 다른 개발자에게 유지보수를 맡길 수 있도록 인계합니다.</p></div></div>
+<div class="feature-list">
+<div class="feature">전체 소스코드 GitHub 저장소 인계</div>
+<div class="feature">발주자 명의 Supabase 프로젝트 및 DB</div>
+<div class="feature">발주자 명의 배포·도메인 계정 운영 권장</div>
+<div class="feature">테이블 구조와 환경설정 문서 제공</div>
+<div class="feature">관리자 상품·재고 등록 사용법 교육</div>
+<div class="feature">백업 및 복구 기본 절차 안내</div>
+<div class="feature">오픈 전 주요 기능 통합 테스트</div>
+<div class="feature">안정화 이후 추가 유지보수 별도 협의</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-head"><div class="num">09 / EXPERIENCE</div><div><h2>관련 개발 경험 및 수행 역량</h2><p class="section-intro">요구 기능과 유사한 데이터 관리·운영 화면·고객 접점 시스템을 개발한 경험을 바탕으로 프로젝트를 수행합니다.</p></div></div>
+<div class="cards">
+<article class="card"><div class="label">WEB · QR ORDER</div><h3>QRCodeMenu</h3><p>React 기반 고객 주문 화면, 메뉴 데이터 관리, Supabase 연동 및 주문 상태 관리</p></article>
+<article class="card"><div class="label">POS · INVENTORY</div><h3>InterPOS</h3><p>상품·옵션·재고·판매 및 매장 운영 관리 기능을 갖춘 POS 프로그램 개발</p></article>
+<article class="card"><div class="label">DEPLOYMENT</div><h3>GitHub · Cloudflare</h3><p>GitHub 버전 관리와 Cloudflare Pages 배포를 통한 독립적인 웹 서비스 운영</p></article>
+</div>
+<p class="note">상기 사례는 별도 프로젝트의 개발 경험이며, 사케 셀렉트숍 구축에 적용할 수 있는 관련 기술·기능 역량을 설명합니다.</p>
+</section>
+
+<section class="closing">
+<div class="kicker">SAKE SELECT · THE NEXT EXPERIENCE</div>
+<h2>좋은 사케를 발견하는 경험,<br>운영은 더 간편하게.</h2>
+<p>고객에게는 프리미엄 사케 전문점다운 탐색과 추천 경험을 제공하고, 운영자에게는 상품·가격·재고를 직접 관리할 수 있는 실용적인 도구를 제공합니다. 초기 상품 150~200종을 안정적으로 운영하는 데 집중하고, 향후 매장 운영 시스템과 연결할 수 있는 기반을 마련하겠습니다.</p>
+</section>
+<footer class="footer"><span>SAKE SELECT · DIGITAL EXPERIENCE PLATFORM</span><span>PROJECT PROPOSAL · 2026</span></footer>
+</main>
+</body>
+</html>
